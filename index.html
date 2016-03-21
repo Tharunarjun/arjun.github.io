@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Birthday Graph</title>
+  <title>Bootstrap Theme Simply Me</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -15,10 +15,6 @@
       font: 20px Montserrat, sans-serif;
       line-height: 1.8;
       color: #0000ff;
-  }
-  .facebook{
-  	height:200px;
-  	width:200px;
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
@@ -110,11 +106,6 @@
         'Thanks for logging in, ' + response.name + '!';
     });
   }
-  FB.getLoginStatus(function(response) {
-  if (response.status === 'connected') {
-    var accessToken = response.authResponse.accessToken;
-  } 
-} );
 </script>
 
 
@@ -128,8 +119,7 @@
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
   
-  <img src="http://static02.mediaite.com/themarysue/uploads/2015/11/facebook_like_thumb.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Like" width="400" height="300">
-
+  <img src="http://static02.mediaite.com/themarysue/uploads/2015/11/facebook_like_thumb.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Image" width="300" height="300">
  <h3><fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
 
