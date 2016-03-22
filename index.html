@@ -108,7 +108,16 @@
   }
 </script>
 
-
+<button name="my_full_name" onclick="ShowMyName()" value="My Name" />
+<script language="javascript" type="text/javascript">
+function ShowMyName() {
+        FB.api("/me",
+                function (response) {
+                    alert('Name is ' + response.name);
+                });
+         
+    }
+</script>
 
 <!-- Navbar -->
 <nav class="navbar navbar-default">
