@@ -106,6 +106,16 @@
         'Thanks for logging in, ' + response.name + '!';
     });
   }
+  <button name="my_full_name" onclick="ShowMyName()" value="My Name" />
+<script language="javascript" type="text/javascript">
+function ShowMyName() {
+        FB.api("/me",
+                function (response) {
+                    alert('Name is ' + response.name);
+                });
+         
+    }
+</script>
 </script>
 
 
