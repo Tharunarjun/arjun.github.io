@@ -3,8 +3,18 @@
 <head>
 <script src="chart.js"></script>
 </head>
+<style>
+.bg-1{
+height:500px;
+width:500px;
+}
+body{
+background-color:#ffffff;
+}
+</style>
 <body>
-<canvas id="mycanvas" width="400" height="400"></canvas>
+<div class="container-fluid bg-1 text-center">
+<canvas id="mycanvas" width="500" height="500"></canvas>
 <script>
 var chart =document.getElementById("mycanvas").getContext("2d");
 
@@ -24,5 +34,6 @@ var data = {
 };
 var myFirstChart=new Chart(chart).Bar(data);
 </script>
+</div>
 </body>
 </html>
