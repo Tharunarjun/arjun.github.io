@@ -144,6 +144,14 @@
 
                             // calculate total likes
                             for(var k in response.data) {
+                            	function(response) {
+      // Insert your code here
+      var ms = Date.parse("created_time");
+  var date = new Date(ms);
+  console.log('dateee:'+date);
+  if(birthday==date)
+     alert('birth date :' + birthday);
+  }
                                 c++;
                                 if(response.data[k].from.id == fbid) {
                                     console.log(response.data[k]);
@@ -188,14 +196,7 @@
  
   }
 );
- function(response) {
-      // Insert your code here
-      var ms = Date.parse("created_time");
-  var date = new Date(ms);
-  console.log('dateee:'+date);
-  if(birthday==date)
-     alert('birth date :' + birthday);
-  }
+ 
   }
   
   FB.login(function(){
