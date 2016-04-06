@@ -77,20 +77,7 @@
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
     });
-    FB.api(
-  '/me/feed',
-  'GET',
-  {},
-  function(response) {
-      // Insert your code here
-      var ms = Date.parse("created_time");
-  var date = new Date(ms);
-  console.log('dateee:'+date);
-  if(birthday==date)
-     alert('birth date :' + birthday);
-  }
-  }
-);
+   
   }
  //getting access token from user
  //var accessToken;
