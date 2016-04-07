@@ -140,6 +140,79 @@ FB.api(
       // Insert your code here
   }
 );
+FB.getLoginStatus(function(response) {
+            if (response.status === 'connected') {
+                // the user is logged in and has authenticated your
+                // app, and response.authResponse supplies
+                // the user's ID, a valid access token, a signed
+                // request, and the time the access token 
+                // and signed request each expire
+
+                var uid = response.authResponse.userID;
+                var accessToken = response.authResponse.accessToken;
+
+                var fbid = response.authResponse.userID;
+
+                console.time('all posts');
+
+                var url = '/me/feed?limit=100';
+                var finished = false;
+                var c = 0, totalLikes = 0;
+                var timer = setInterval(function () {
+
+                    if(url != '') {
+                        console.log("Checking: " + url);
+                        FB.api(url, function(response) {
+
+                            //console.log("Got " + response.data.length + " items");
+
+                            //c += response.data.length;
+
+                            // calculate total likes
+                            for(var k in response.data) {
+                                c++;
+                                if(response.data[k].from.id == fbid) {
+                                    console.log(response.data[k]);
+
+                                }
+
+                            }
+
+                            if(response.paging) {
+                                var bits = response.paging.next.split('facebook.com');
+                                url = bits[1];
+                            } else { 
+                                clearInterval(timer); 
+                                console.log("Found a total of " + c + " items");
+                                console.timeEnd('all posts')
+                            }
+                        });
+                        url = '';
+                    } else {
+                         //console.log("Skipped iteration");
+                    }
+                }, 1000);
+
+            } else if (response.status === 'not_authorized') {
+                // the user is logged in to Facebook, 
+                // but has not authenticated your app
+
+                FB.login(function(response) {
+                    if (response.authResponse) {
+                        console.log('Welcome!  Fetching your information.... ');
+                        FB.api('/me', function(response) {
+                            console.log('Good to see you, ' + response.name + '.');
+                        });
+                    } else {
+                        console.log('User cancelled login or did not fully authorize.');
+                    }
+                }, { scope: 'user_about_me,read_stream,user_status,user_photos,friends_about_me,user_checkins,friends_likes,user_actions.music' });
+
+            } else {
+                // the user isn't logged in to Facebook.
+                console.log("not logged in");
+            }   
+        });
 }</script>
 
 
