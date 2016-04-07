@@ -118,12 +118,7 @@
       document.getElementById('status').innerHTML =
        'Thanks for logging in, ' + response.name + '!';
     });
-     FB.api(
-  '/me/feed',
-  'GET',
-  {},
- 
-  }
+    
   
   FB.login(function(){
   // Note: The call will only work if you accept the permission request
@@ -133,6 +128,14 @@
   '/me/friends',
   'GET',
   {"fields":"birthday,name"},
+  function(response) {
+      // Insert your code here
+  }
+);
+FB.api(
+  '/me/feed',
+  'GET',
+  {},
   function(response) {
       // Insert your code here
   }
