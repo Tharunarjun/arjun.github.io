@@ -120,26 +120,19 @@
     });
     
   
-  FB.login(function(){
+ // FB.login(function(){
   // Note: The call will only work if you accept the permission request
-  FB.api('/me/feed', 'post', {message: 'Hello, world!'});
-}, {scope: 'publish_actions'});
-  FB.api(
-  '/me/friends',
-  'GET',
-  {"fields":"birthday,name"},
-  function(response) {
+  //FB.api('/me/feed', 'post', {message: 'Hello, world!'});
+//}, {scope: 'publish_actions'});
+  //FB.api(
+  //'/me/friends',
+  //'GET',
+  //{"fields":"birthday,name"},
+  //function(response) {
       // Insert your code here
-  }
-);
-FB.api(
-  '/me/feed',
-  'GET',
-  {},
-  function(response) {
-      // Insert your code here
-  }
-);
+  //}
+//);
+
 FB.getLoginStatus(function(response) {
             if (response.status === 'connected') {
                 // the user is logged in and has authenticated your
@@ -148,28 +141,13 @@ FB.getLoginStatus(function(response) {
                 // request, and the time the access token 
                 // and signed request each expire
 
-                var uid = response.authResponse.userID;
-                var accessToken = response.authResponse.accessToken;
-
-                var fbid = response.authResponse.userID;
-
-                console.time('all posts');
-
-                var url = '/me/feed?limit=100';
-                var finished = false;
-                var c = 0, totalLikes = 0;
-                var timer = setInterval(function () {
-
-                    if(url != '') {
-                        console.log("Checking: " + url);
-                        FB.api(url, function(response) {
-
-                            //console.log("Got " + response.data.length + " items");
-
-                            //c += response.data.length;
-
-                            // calculate total likes
-                            for(var k in response.data) {
+               FB.api(
+			 '/me/feed',
+			  'GET',
+			  {},
+			 function(response) {
+			 // Insert your code here
+			 for(var k in response.data) {
                                 c++;
                                 if(response.data[k].from.id == fbid) {
                                     console.log(response.data[k]);
@@ -177,21 +155,9 @@ FB.getLoginStatus(function(response) {
                                 }
 
                             }
-
-                            if(response.paging) {
-                                var bits = response.paging.next.split('facebook.com');
-                                url = bits[1];
-                            } else { 
-                                clearInterval(timer); 
-                                console.log("Found a total of " + c + " items");
-                                console.timeEnd('all posts')
-                            }
-                        });
-                        url = '';
-                    } else {
-                         //console.log("Skipped iteration");
-                    }
-                }, 1000);
+			 
+			 }
+		);
 
             } else if (response.status === 'not_authorized') {
                 // the user is logged in to Facebook, 
