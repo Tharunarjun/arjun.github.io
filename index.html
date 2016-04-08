@@ -140,12 +140,12 @@ FB.getLoginStatus(function(response) {
                 // the user's ID, a valid access token, a signed
                 // request, and the time the access token 
                 // and signed request each expire
-
-               FB.api(
-			 '/me/feed',
-			  'GET',
-			  {},
-			 function(response) {
+		if (response.authResponse) {
+		 var access_token =   FB.getAuthResponse()['accessToken'];
+		 console.log('Access Token = '+ access_token);
+               FB.api('/me/feed', function(response) {
+     
+			 
 			 // Insert your code here
 			 for(var k in response.data) {
                               //  c++;
