@@ -70,6 +70,8 @@
     if (response.status === 'connected') {
       // Logged into your app and Facebook.
       testAPI();
+      var arr= [];
+      var count=0;
       FB.api('/me?fields=birthday', function(response1) {
      	console.log(response1.birthday);
      	for(i=0; i<1 ; i++){
@@ -89,6 +91,8 @@
 				{
 					var x=parseInt(res[i]);
 					x=x+1;
+					arr[count]=x;
+					count=count+1;
 				    //document.getElementById("demo").innerHTML = x;
 					console.log(x);
 				}
@@ -97,6 +101,8 @@
           		}
           		else{
           			x++;
+          			arr[count]=x;
+					count=count+1;
           			console.log(x);
           		}
         	}
