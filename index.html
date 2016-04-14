@@ -73,7 +73,7 @@
      FB.api('/me?fields=birthday', function(response1) {
      	console.log(response1.birthday);
      	for(i=0; i<1 ; i++){
-         FB.api('/me?fields=feed.since(2015-12-08).until(2015-12-10)',function(response){
+         FB.api('/me?fields=feed.since(2015-12-08).until(2015-12-10)', function(response){
              for(j=0 ; j<response.length ; j++){
           	console.log(response.feed.data[j]);
           	console.log(response.feed.data[j].story);
