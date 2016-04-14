@@ -74,7 +74,8 @@
      	console.log(response1.birthday);
      	for(i=0; i<1 ; i++){
          FB.api('/me?fields=feed.since(2015-12-08).until(2015-12-10)', function(response2){
-             for(j=0 ; j<response2.feed.length ; j++){
+         	console.log(response2.feed.data[2]);
+             for(j=0 ; j<response2.feed.data.length ; j++){
           	console.log(response2.feed.data[j]);
           	console.log(response2.feed.data[j].story);
           	 var str = response2.feed.data[j].story;
@@ -85,8 +86,8 @@ if(isNaN(res[i])==false)
 {
 var x=parseInt(res[i]);
 x=x+1;
-    document.getElementById("demo").innerHTML = x;
-
+    //document.getElementById("demo").innerHTML = x;
+console.log(x);
 }
 }
              }
