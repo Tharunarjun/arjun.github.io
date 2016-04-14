@@ -70,13 +70,13 @@
     if (response.status === 'connected') {
       // Logged into your app and Facebook.
       testAPI();
-      var arr = [];
-      var count=0;
-      //var d1=new Date(15,09,12);
-      //var d2=new Date(15,09,12);
-     FB.api('/me?fields=birthday', function(response1) {
+      FB.api('/me?fields=birthday', function(response1) {
      	console.log(response1.birthday);
-     	for(j=0 ; j<response2.feed.data.length ; j++){
+     	for(i=0; i<1 ; i++){
+     		console.log(i);
+         FB.api('/me?fields=feed.since(2015-12-08).until(2015-12-10)',function(response2){
+         	//console.log(response2.feed.data[2]);
+        	for(j=0 ; j<response2.feed.data.length ; j++){
         		console.log(response2.feed.data.length);
           		console.log(response2.feed.data[j]);
           		//console.log(response2.feed.data[j].story);
@@ -100,9 +100,9 @@
           			console.log(x);
           		}
         	}
-         }
+         });
 
-     	});
+     	}
          // var ms = Date.parse("response1.feed.data[2][1]");
 	//var date = new Date(ms);
 	//console.log('dateee:'+date);
