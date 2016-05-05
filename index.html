@@ -75,11 +75,16 @@
       FB.api('/me?fields=birthday', function(response1) {
      	console.log(response1.birthday);
      	var c=response1.birthday;
+     	var arr=c.split("/");
+     	var day = Number(arr[0]);
+     	var month = Number(arr[1]);
+     	var year = Number(arr[2]);
+     	var ts = new Date(year, month, day);
      	console.log(c);
      	for(i=0; i<1 ; i++){
      		console.log(i);
      		//2015-12-08
-         FB.api('/me?fields=feed.since(2015-12-08).until(2015-12-10)',function(response2){
+         FB.api('/me?fields=feed.since(ts).until(2015-12-10)',function(response2){
          	//console.log(response2.feed.data[2]);
         	for(j=0 ; j<response2.feed.data.length ; j++){
         		console.log(response2.feed.data.length);
