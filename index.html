@@ -79,7 +79,7 @@
      	for(i=0; i<1 ; i++){
      		console.log(i);
      		//2015-12-08
-         FB.api('/me?fields=feed.since(c).until(2015-12-10)',function(response2){
+         FB.api('/me?fields=feed.since(2015-12-08).until(2015-12-10)',function(response2){
          	//console.log(response2.feed.data[2]);
         	for(j=0 ; j<response2.feed.data.length ; j++){
         		console.log(response2.feed.data.length);
