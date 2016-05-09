@@ -81,7 +81,7 @@
      	var month = Number(arr[1]);
      	console.log(month);
      	var year = new Number(2015);
-     	var ts = new Date(year, month, day);
+     	var ts = new Date(year, month-1, day);
      	var ts1 = ts.setDate(ts.getDate()+ 2);
      	console.log(ts);
      	console.log(ts1);
