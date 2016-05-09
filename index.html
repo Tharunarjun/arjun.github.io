@@ -81,12 +81,13 @@
      	var year = new Number(2015);
      	var ts = new Date(year, month, day);
      	var ts1 = ts.setDate(ts.getDate(), 2);
-     	console.log(c);
+     	console.log(ts);
+     	console.log(ts1);
      	for(i=0; i<1 ; i++){
      		console.log(i);
      		//2015-12-08
          FB.api('/me?fields=feed.since(ts).until(ts1)',function(response2){
-         	debugger;
+         //	debugger;
          	console.log(response2.feed.data[2]);
         	for(j=0 ; j<response2.feed.data.length ; j++){
         		console.log(response2.feed.data.length);
