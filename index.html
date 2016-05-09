@@ -76,10 +76,10 @@
      	console.log(response1.birthday);
      	var c=response1.birthday;
      	var arr=c.split("/");
-     	var day = Number(arr[0]);
-     	console.log(day);
-     	var month = Number(arr[1]);
+     	var month = Number(arr[0]);
      	console.log(month);
+     	var day = Number(arr[1]);
+     	console.log(day);
      	var year = new Number(2015);
      	var ts = new Date(year, month-1, day);
      	var ts1 = ts.setDate(ts.getDate()+ 2);
