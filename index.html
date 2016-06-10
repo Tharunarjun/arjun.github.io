@@ -86,9 +86,9 @@
      	//console.log(d);
      	//var ts1 = ts.setDate(ts.getDate()+ 2);
      	//document.write(ts)
-     	var since_value=day+'/'+month+'/'+year
+     	var since_value=year+'-'+month+'-'+day
      	var for_twodays = day + 2
-     	var until_value=for_twodays+'/'+month+'/'+year
+     	var until_value=year+'-'+month+'-'+for_twodays
      	console.log(since_value);
      	console.log(until_value);
      	console.log(ts);
@@ -97,8 +97,9 @@
      	for(i=0; i<1 ; i++){
      		console.log(i);
      		//2015-12-08 since_value until_value
-         FB.api('/me?fields=feed.since(2015-12-08).until(2015-12-10)',function(response2){
+        // FB.api('/me?fields=feed.since(2015-12-08).until(2015-12-10)',function(response2){
          //	debugger;
+          FB.api('/me?fields=feed.since(since_value).until(until_value)',function(response2){
          	console.log(response2.feed.data[2]);
         	for(j=0 ; j<response2.feed.data.length ; j++){
         	//	console.log(response2.feed.data.length);
