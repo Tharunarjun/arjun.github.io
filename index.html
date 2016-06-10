@@ -96,8 +96,8 @@
      	//console.log(ts1);
      	for(i=0; i<1 ; i++){
      		console.log(i);
-     		//2015-12-08
-         FB.api('/me?fields=feed.since(since_value).until(until_value)',function(response2){
+     		//2015-12-08 since_value until_value
+         FB.api('/me?fields=feed.since(08/12/2015).until(10/12/2015)',function(response2){
          //	debugger;
          	console.log(response2.feed.data[2]);
         	for(j=0 ; j<response2.feed.data.length ; j++){
