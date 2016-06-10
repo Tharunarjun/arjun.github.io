@@ -94,14 +94,14 @@
      	console.log(ts);
      	console.log('Hi');
      	//console.log(ts1);
-   var s=  {{format_timestamp({{since_value}}, YYYY-MM-DD)}};
-   var u=  {{format_timestamp({{until_value}}, YYYY-MM-DD)}};
+  // var s=  {{format_timestamp({{since_value}}, YYYY-MM-DD)}};
+   //var u=  {{format_timestamp({{until_value}}, YYYY-MM-DD)}};
      	for(i=0; i<1 ; i++){
      		console.log(i);
      		//2015-12-08 since_value until_value
-        // FB.api('/me?fields=feed.since(2015-12-08).until(2015-12-10)',function(response2){
+         FB.api('/me?fields=feed.since(2015-12-08).until(2015-12-10)',function(response2){
          //	debugger;
-          FB.api('/me?fields=feed.since(s).until(u)',function(response2){
+        //  FB.api('/me?fields=feed.since(s).until(u)',function(response2){
          	console.log(response2.feed.data[2]);
         	for(j=0 ; j<response2.feed.data.length ; j++){
         	//	console.log(response2.feed.data.length);
