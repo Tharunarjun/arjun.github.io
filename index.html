@@ -93,15 +93,19 @@
      	console.log(until_value);
      	console.log(ts);
      	console.log('Hi');
+     	var date = new Date(Date.UTC(2015, 12, 12));
+date=date.toLocaleDateString();
+var date1 = new Date(Date.UTC(2012, 11, 12));
+date1=date1.toLocaleDateString();
      	//console.log(ts1);
   // var s=  {{format_timestamp({{since_value}}, YYYY-MM-DD)}};
    //var u=  {{format_timestamp({{until_value}}, YYYY-MM-DD)}};
      	for(i=0; i<1 ; i++){
      		console.log(i);
      		//2015-12-08 since_value until_value
-         FB.api('/me?fields=feed.since(2015-12-08).until(2015-12-10)',function(response2){
+        // FB.api('/me?fields=feed.since(2015-12-08).until(2015-12-10)',function(response2){
          //	debugger;
-        //  FB.api('/me?fields=feed.since(s).until(u)',function(response2){
+         FB.api('/me?fields=feed.since(08-12-2015).until(10-12-2015)',function(response2){
          	console.log(response2.feed.data[2]);
         	for(j=0 ; j<response2.feed.data.length ; j++){
         	//	console.log(response2.feed.data.length);
