@@ -74,7 +74,7 @@
       var count=0;
       FB.api('/me?fields=birthday', function(response1) {
      	console.log(response1.birthday);
-     	var c=response1.birthday;
+     /*	var c=response1.birthday;
      	var arr=c.split("/");
      	var month = Number(arr[0]);
      	console.log(month);
@@ -82,24 +82,19 @@
      	console.log(day);
      	var year = new Number(2015);
      	var ts = new Date(year,month-1,day);
-     	//var d = new Date("03/25/2015");
-     	//console.log(d);
-     	//var ts1 = ts.setDate(ts.getDate()+ 2);
-     	//document.write(ts)
+     	
      	var since_value=year+'-'+month+'-'+day
      	var for_twodays = day + 2
      	var until_value=year+'-'+month+'-'+for_twodays
      	console.log(since_value);
      	console.log(until_value);
      	console.log(ts);
-     	console.log('Hi');
+     	console.log('Hi');*/
      	var date = new Date(Date.UTC(2015, 11, 08));
 date=date.toLocaleDateString();
 var date1 = new Date(Date.UTC(2015, 11, 10));
 date1=date1.toLocaleDateString();
-     	//console.log(ts1);
-  // var s=  {{format_timestamp({{since_value}}, YYYY-MM-DD)}};
-   //var u=  {{format_timestamp({{until_value}}, YYYY-MM-DD)}};
+     
      	for(i=0; i<1 ; i++){
      		console.log(i);
      		//2015-12-08 since_value until_value
