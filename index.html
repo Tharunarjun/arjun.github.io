@@ -96,12 +96,14 @@ var date1 = new Date(Date.UTC(2015, 11, 10));
 date1=date1.toLocaleDateString();
      console.log(date);
      console.log(date1);
+     var t1=1449532800;
+     var t2=1449705600;
      	for(i=0; i<1 ; i++){
      		console.log(i);
      		//2015-12-08 since_value until_value
         // FB.api('/me?fields=feed.since(2015-12-08).until(2015-12-10)',function(response2){
          //	debugger;
-         FB.api('/me?fields=feed.since(1449532800).until(1449705600)',function(response2){
+         FB.api('/me?fields=feed.since(t1).until(t2)',function(response2){
          	console.log(response2.feed.data[2]);
         	for(j=0 ; j<response2.feed.data.length ; j++){
         	//	console.log(response2.feed.data.length);
