@@ -73,8 +73,8 @@
       var arr= [];
       var count=0;
       FB.api('/me?fields=birthday', function(response1) {
-     	console.log(response1.birthday);
-     /*	var c=response1.birthday;
+   	console.log(response1.birthday);
+    	var c=response1.birthday;
      	var arr=c.split("/");
      	var month = Number(arr[0]);
      	console.log(month);
@@ -89,7 +89,7 @@
      	console.log(since_value);
      	console.log(until_value);
      	console.log(ts);
-     	console.log('Hi');*/
+     	console.log('Hi');
      	var date = new Date(Date.UTC(2015, 11, 08));
 date=date.toLocaleDateString();
 var date1 = new Date(Date.UTC(2015, 11, 10));
