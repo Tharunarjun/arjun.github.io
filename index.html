@@ -118,7 +118,7 @@ console.log(c2);
      		//2015-12-08 since_value until_value
         // FB.api('/me?fields=feed.since(2015-12-08).until(2015-12-10)',function(response2){
          //	debugger;
-         FB.api('/me?fields=feed.since('+ c1 +).until('+ c2 +')',function(response2){
+         FB.api('/me?fields=feed.since(' + c1 + ').until(' + c2 + ')',function(response2){
          	console.log(response2.feed.data[2]);
         	for(j=0 ; j<response2.feed.data.length ; j++){
         	//	console.log(response2.feed.data.length);
