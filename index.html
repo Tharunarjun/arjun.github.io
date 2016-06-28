@@ -199,7 +199,8 @@ date1=date1.toLocaleDateString();
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
       console.log(JSON.stringify(response));
-      document.getElementById('status').innerHTML =  'Thanks for logging in, ' + response.name + '!';
+      //document.getElementById('status').innerHTML =  'Thanks for logging in, ' + response.name + '!';
+      console.log('Thanks for logging in, ' + response.name + '!');
        
     });
   }
