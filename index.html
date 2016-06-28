@@ -81,19 +81,17 @@ var d1=08;
 var m2=11;
 var d2=10;
 var y2=2015;
-     	var date = new Date(Date.UTC(y1, m1, d1));
+     	
+var url='/me?fields=feed.since(1449532800).until(1449705600)';
+     	for(i=0; i<4 ; i++){
+     		console.log(i);
+   var date = new Date(Date.UTC(y1, m1, d1));
 date=date.toLocaleDateString();
 var date1 = new Date(Date.UTC(y1, m2, d2));
 date1=date1.toLocaleDateString();
      console.log(date);
      console.log(date1);
-var url='/me?fields=feed.since(1449532800).until(1449705600)';
-var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
-     	for(i=0; i<1 ; i++){
-     		console.log(i);
-     		//2015-12-08 since_value until_value
-        // FB.api('/me?fields=feed.since(2015-12-08).until(2015-12-10)',function(response2){
-         //	debugger;
+     var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
          FB.api(ur,function(response2){
          	console.log(response2.feed.data[2]);
         	for(j=0 ; j<response2.feed.data.length ; j++){
@@ -126,7 +124,7 @@ var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
         	}
         	console.log(arr);
          });
-
+	y1=y1-1;
      	}
          // var ms = Date.parse("response1.feed.data[2][1]");
 	//var date = new Date(ms);
