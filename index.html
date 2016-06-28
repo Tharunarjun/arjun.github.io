@@ -113,7 +113,7 @@ Date.parse(c1);
 Date.parse(c2);
 console.log(c1);
 console.log(c2);
-var url='/me?fields=feed.since(c1).until(c2)';
+var url='/me?fields=feed.since(""+c1+"").until(''+c2+"")';
      	for(i=0; i<1 ; i++){
      		console.log(i);
      		//2015-12-08 since_value until_value
