@@ -74,23 +74,8 @@
       var count=0;
       FB.api('/me?fields=birthday', function(response1) {
    	console.log(response1.birthday);
-    	/*var c=response1.birthday;
-     	var arr=c.split("/");
-     	var month = Number(arr[0]);
-     	console.log(month);
-     	var day = Number(arr[1]);
-     	console.log(day);
-     	var year = new Number(2015);
-     	var ts = new Date(year,month-1,day);
-     	
-     	var since_value=year+'-'+month+'-'+day
-     	var for_twodays = day + 2
-     	var until_value=year+'-'+month+'-'+for_twodays
-     	console.log(since_value);
-     	console.log(until_value);
-     	console.log(ts);
-     	console.log('Hi');*/
-     	var y1=2015;
+    
+var y1=2015;
 var m1=11;
 var d1=08;
 var m2=11;
@@ -98,22 +83,10 @@ var d2=10;
 var y2=2015;
      	var date = new Date(Date.UTC(y1, m1, d1));
 date=date.toLocaleDateString();
-var date1 = new Date(Date.UTC(y2, m2, d2));
+var date1 = new Date(Date.UTC(y1, m2, d2));
 date1=date1.toLocaleDateString();
      console.log(date);
      console.log(date1);
-     var t1=1449532800;
-     var t2=1449705600;
-     var c1 = new Date();
-     var c2 = new Date();
-
-y1=y1-1;
-c1=c1.setFullYear(y1, m1, d1);
-c2=c2.setFullYear(y2, m2, d2);
-Date.parse(c1);
-Date.parse(c2);
-console.log(c1);
-console.log(c2);
 var url='/me?fields=feed.since(1449532800).until(1449705600)';
 var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
      	for(i=0; i<1 ; i++){
