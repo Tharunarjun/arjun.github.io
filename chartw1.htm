@@ -1,8 +1,8 @@
+
 <!DOCTYPE HTML>
 <html>
 <head>
 <script src="chart.js"></script>
-<script src="index.html"></script>
 </head>
 <style>
 .bg-1{
@@ -17,10 +17,8 @@ background-color:#ffffff;
 <div class="container-fluid bg-1 text-center">
 <canvas id="mycanvas" width="500" height="500"></canvas>
 <script>
-
-  //var arr=[56,25,32,46];
 var chart =document.getElementById("mycanvas").getContext("2d");
-var i=0;
+
 var data = {
     labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016"],
     datasets: [
@@ -31,18 +29,10 @@ var data = {
             highlightFill: "rgba(151,187,205,0.75)",
             highlightStroke: "rgba(151,187,205,1)",
             data: [65, 59, 80, 81, 56, 55, 40]
-            //data:[arr[0],arr[1],arr[2],arr[3]]
-            //data:arr;
         },
         
     ]
 };
-var option = {
-    animation: {
-        duration:3000
-    }
-};
-//data.datasets.data=arr;
 var myFirstChart=new Chart(chart).Bar(data);
 </script>
 </div>
