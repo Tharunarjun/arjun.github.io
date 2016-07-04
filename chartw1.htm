@@ -18,7 +18,7 @@ background-color:#ffffff;
 <canvas id="mycanvas" width="500" height="500"></canvas>
 <script>
 var chart =document.getElementById("mycanvas").getContext("2d");
-
+var arr=[20,50,70,40];
 var data = {
     labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016"],
     datasets: [
@@ -28,7 +28,8 @@ var data = {
             strokeColor: "rgba(151,187,205,0.8)",
             highlightFill: "rgba(151,187,205,0.75)",
             highlightStroke: "rgba(151,187,205,1)",
-            data: [65, 59, 80, 81, 56, 55, 40]
+           // data: [65, 59, 80, 81, 56, 55, 40]
+           data:arr;
         },
         
     ]
