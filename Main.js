@@ -1,6 +1,6 @@
 var arr= [];
 var arr1=[];
-console.log('fine3');
+console.log('fine4');
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
