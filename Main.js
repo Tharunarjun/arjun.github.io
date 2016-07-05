@@ -1,3 +1,4 @@
+var arr= [];
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
@@ -8,7 +9,7 @@ function statusChangeCallback(response) {
     if (response.status === 'connected') {
       // Logged into your app and Facebook.
       testAPI();
-      var arr= [];
+      
       var count=0;
       FB.api('/me?fields=birthday', function(response1) {
    	console.log(response1.birthday);
