@@ -67,7 +67,8 @@ date1=date1.toLocaleDateString();
          });
 	y1=y1-1;
      	}
-         
+         arr1=arr;
+    console.log('arr1 is '+arr1); 
      });
     }
     
@@ -84,8 +85,7 @@ date1=date1.toLocaleDateString();
         
     }
   }
-  arr1=arr;
-    console.log('arr1 is '+arr1);
+ 
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
