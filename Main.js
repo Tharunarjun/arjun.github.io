@@ -73,7 +73,6 @@ date1=date1.toLocaleDateString();
      
      });
     }
-    console.log('arr1 is '+arr1);
     else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       //document.getElementById('status').innerHTML = 'Please log into this app.';
@@ -87,7 +86,7 @@ date1=date1.toLocaleDateString();
         
     }
   }
- 
+ console.log('arr1 is '+arr1);
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
