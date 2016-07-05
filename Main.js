@@ -64,10 +64,11 @@ date1=date1.toLocaleDateString();
           		}
         	}
         	console.log(arr);
+        	arr1=arr;
          });
 	y1=y1-1;
      	}
-         arr1=arr;
+         
     console.log('arr1 is '+arr1); 
      });
     }
