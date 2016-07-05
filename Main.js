@@ -1,5 +1,6 @@
 var arr= [];
-console.log('fine');
+var arr1=[]
+console.log('fine1');
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
@@ -68,7 +69,9 @@ date1=date1.toLocaleDateString();
      	}
          
      });
-    } else if (response.status === 'not_authorized') {
+    }
+    
+    else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       //document.getElementById('status').innerHTML = 'Please log into this app.';
       console.log("Please log into this app.");
@@ -81,6 +84,8 @@ date1=date1.toLocaleDateString();
         
     }
   }
+  arr1=arr;
+    console.log('arr1 is '+arr1);
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
