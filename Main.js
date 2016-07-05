@@ -1,6 +1,6 @@
-var arr= [];
+
 var arr1=[];
-console.log('fine5');
+console.log('fine6');
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
@@ -11,6 +11,7 @@ function statusChangeCallback(response) {
     // for FB.getLoginStatus().
     if (response.status === 'connected') {
       // Logged into your app and Facebook.
+      var arr= [];
       testAPI();
       
       var count=0;
@@ -87,6 +88,7 @@ date1=date1.toLocaleDateString();
     }
   }
  console.log('arr1 is '+arr1);
+ console.log('arr is '+arr);
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
