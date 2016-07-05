@@ -2,7 +2,7 @@ var arr1=[];
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
-    console.log('fine');
+    console.log('fine1');
     // The response object is returned with a status field that lets the
     // app know the current login status of the person.
     // Full docs on the response object can be found in the documentation
@@ -63,12 +63,14 @@ date1=date1.toLocaleDateString();
           		}
         	}
         	console.log(arr);
+        	arr1=arr;
+        	console.log('arr1 is '+arr1);
          });
 	y1=y1-1;
      	}
          
      });
-     console.log('arr is '+arr);
+     //console.log('arr is '+arr);
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       //document.getElementById('status').innerHTML = 'Please log into this app.';
