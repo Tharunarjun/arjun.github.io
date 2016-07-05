@@ -1,5 +1,5 @@
 var arr= [];
-var arr1=[]
+var arr1=[];
 console.log('fine3');
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
