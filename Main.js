@@ -1,3 +1,4 @@
+var arr1=[];
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
@@ -79,6 +80,7 @@ date1=date1.toLocaleDateString();
         
     }
   }
+  console.log('arr is '+arr);
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
