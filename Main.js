@@ -1,4 +1,4 @@
-
+var arr= [];
 var arr1=[];
 console.log('fine6');
 function statusChangeCallback(response) {
@@ -11,7 +11,7 @@ function statusChangeCallback(response) {
     // for FB.getLoginStatus().
     if (response.status === 'connected') {
       // Logged into your app and Facebook.
-      var arr= [];
+      
       testAPI();
       
       var count=0;
