@@ -67,9 +67,11 @@ date1=date1.toLocaleDateString();
         	console.log('arr1 is '+arr1);
         	if(i==3)
         	{
-        		function assign(arr2)
+        		function assign()
         		{
-        		return arr1;
+        			var arr2=new Array();
+        		arr2=arr1;
+        		return arr2;
         		}
         	}
         	
