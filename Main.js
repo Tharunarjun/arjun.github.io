@@ -71,6 +71,7 @@ date1=date1.toLocaleDateString();
         		{
         			var arr2=new Array();
         		arr2=arr1;
+        		consle.log('array in fun '+arr2);
         		return arr2;
         		}
         	}
