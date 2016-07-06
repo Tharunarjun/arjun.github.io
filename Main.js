@@ -89,6 +89,7 @@ date1=date1.toLocaleDateString();
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
+  console.log('arr1 is now '+arr1);
   function checkLoginState() {
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
