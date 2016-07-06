@@ -65,6 +65,13 @@ date1=date1.toLocaleDateString();
         	console.log(arr);
         	arr1=arr;
         	console.log('arr1 is '+arr1);
+        	if(i==3)
+        	{
+        		function assign(arr2[])
+        		{
+        		return arr1;
+        		}
+        	}
         	
          });
 	y1=y1-1;
