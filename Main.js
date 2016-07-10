@@ -12,7 +12,9 @@ function statusChangeCallback(response) {
       var count=0;
       FB.api('/me?fields=birthday', function(response1) {
    	console.log(response1.birthday);
-    
+    var b=new Date(response1.birthday);
+	   	var b1=new Date(response1.birthday);
+	   	var e=new Date();
 var y1=2015;
 var m1=11;
 var d1=08;
@@ -20,7 +22,7 @@ var m2=11;
 var d2=10;
 var y2=2015;
      	
-var url='/me?fields=feed.since(1449532800).until(1449705600)';
+//var url='/me?fields=feed.since(1449532800).until(1449705600)';
      	for(i=0; i<4 ; i++){
      		console.log(i);
    var date = new Date(Date.UTC(y1, m1, d1));
