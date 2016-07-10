@@ -38,7 +38,7 @@ date1=date1.toLocaleDateString();
      //console.log(date1);
      var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
          FB.api(ur,function(response2){
-         	//console.log(response2.feed.data[2]);
+         	console.log(response2.feed.data[2]);
         	for(j=0 ; j<response2.feed.data.length ; j++){
         	//	console.log(response2.feed.data.length);
           	//	console.log(response2.feed.data[j]);
@@ -54,7 +54,7 @@ date1=date1.toLocaleDateString();
 					x=x+1;
 					arr[count]=x;
 					count=count+1;
-				    //document.getElementById("demo").innerHTML = x;
+				    
 				//	console.log("yes "+x);
 				}
 			
