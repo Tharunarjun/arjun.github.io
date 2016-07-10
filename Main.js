@@ -14,7 +14,8 @@ function statusChangeCallback(response) {
       var count=0;
       FB.api('/me?fields=birthday', function(response1) {
    	console.log(response1.birthday);
-    
+    var g=response1.birthday+2;
+    console.log(g);
 var y1=2015;
 var m1=11;
 var d1=08;
