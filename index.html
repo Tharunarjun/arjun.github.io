@@ -62,7 +62,7 @@ background-color: #ffffff;
   	$(function(){
     $("#div2").hide();
     $("#button").on("click", function(){
-        $("#div1,#nav, #div2").toggle();
+        $("#div1,#nav,,#div3 #div2").toggle();
     });
 });
   </script>
@@ -124,7 +124,7 @@ var myFirstChart=new Chart(chart).Bar(data);
   
 </div>
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
+<div class="container-fluid bg-2 text-center" id="div3">
   <h3 class="margin">Want to Find Number of Posts You Received On Your Birthday?</h3>
   <p>This site tells the number of posts received on your birthday.</p>
  <!-- <a href="chartw1.htm" target="iframe_a" class="btn btn-default btn-lg">
