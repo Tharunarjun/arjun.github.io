@@ -2,7 +2,7 @@ var arr1=[];
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
-    console.log('fine1');
+   // console.log('fine1');
     // The response object is returned with a status field that lets the
     // app know the current login status of the person.
     // Full docs on the response object can be found in the documentation
@@ -14,19 +14,20 @@ function statusChangeCallback(response) {
       var count=0;
       FB.api('/me?fields=birthday', function(response1) {
    	console.log(response1.birthday);
-   	var d=new Date(response1.birthday);
-   	var d1=new Date(response1.birthday);
+   	var b=new Date(response1.birthday);
+   	var b1=new Date(response1.birthday);
+   	var e=new Date();
     // d=response1.birthday;
      //d1=response1.birthday;
      var c=d1.getDate();
      d1.setDate(c + 2);
     console.log('dates are '+d+' '+d1);
-var y1=2015;
-var m1=11;
-var d1=08;
-var m2=11;
-var d2=10;
-var y2=2015;
+var y1=e.getFullYear();
+var m1=b.getMonth();
+var d1=b.getDate();
+var m2=b1.getMonth();
+var d2=b1.getDate();
+var y2=e.getFullYear();
      	for(i=0; i<4 ; i++){
      		console.log(i);
    var date = new Date(Date.UTC(y1, m1, d1));
@@ -54,7 +55,7 @@ date1=date1.toLocaleDateString();
 					arr[count]=x;
 					count=count+1;
 				    //document.getElementById("demo").innerHTML = x;
-					console.log("yes "+x);
+				//	console.log("yes "+x);
 				}
 			
                 	}
@@ -70,21 +71,11 @@ date1=date1.toLocaleDateString();
         	
         	arr1=arr;
         	some(arr);
-        	console.log('arr1 is '+arr1);
-        //	arr1.join('|');
-        	/*	function assign()
-        		{
-        			var arr2=new Array();
-        		arr2=arr1;
-        		consle.log('array in fun '+arr2);
-        		return arr2;
-        		}*/
-        	
-        	
+        	//console.log('arr1 is '+arr1);
          });
 	y1=y1-1;
      	}
-       console.log('arr1 is '+arr1);  
+      // console.log('arr1 is '+arr1);  
      });
      //console.log('arr is '+arr);
     } else if (response.status === 'not_authorized') {
