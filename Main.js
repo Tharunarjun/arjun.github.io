@@ -19,9 +19,9 @@ function statusChangeCallback(response) {
    	var e=new Date();
     // d=response1.birthday;
      //d1=response1.birthday;
-     var c=d1.getDate();
-     d1.setDate(c + 2);
-    console.log('dates are '+d+' '+d1);
+     var c=b1.getDate();
+     b1.setDate(c + 2);
+    console.log('dates are '+b+' '+b1);
 var y1=e.getFullYear();
 var m1=b.getMonth();
 var d1=b.getDate();
