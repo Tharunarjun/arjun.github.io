@@ -65,13 +65,14 @@ date1=date1.toLocaleDateString();
         	console.log(arr);
         	arr1=arr;
         	console.log('arr1 is '+arr1);
-        		function assign()
+        	arr1.join('|');
+        	/*	function assign()
         		{
         			var arr2=new Array();
         		arr2=arr1;
         		consle.log('array in fun '+arr2);
         		return arr2;
-        		}
+        		}*/
         	
         	
          });
