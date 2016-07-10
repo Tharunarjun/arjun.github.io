@@ -63,8 +63,9 @@ date1=date1.toLocaleDateString();
           		}
         	}
         	console.log(arr);
-        	some(arr);
+        	
         	arr1=arr;
+        	some(arr);
         	console.log('arr1 is '+arr1);
         //	arr1.join('|');
         	/*	function assign()
