@@ -1,8 +1,6 @@
-var arr1=[];
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
-   // console.log('fine1');
     // The response object is returned with a status field that lets the
     // app know the current login status of the person.
     // Full docs on the response object can be found in the documentation
@@ -14,20 +12,15 @@ function statusChangeCallback(response) {
       var count=0;
       FB.api('/me?fields=birthday', function(response1) {
    	console.log(response1.birthday);
-   	var b=new Date(response1.birthday);
-   	var b1=new Date(response1.birthday);
-   	var e=new Date();
-    // d=response1.birthday;
-     //d1=response1.birthday;
-     var c=b1.getDate();
-     b1.setDate(c + 2);
-    console.log('dates are '+b+' '+b1);
-var y1=e.getFullYear();
-var m1=b.getMonth();
-var d1=b.getDate();
-var m2=b1.getMonth();
-var d2=b1.getDate();
-var y2=e.getFullYear();
+    
+var y1=2015;
+var m1=11;
+var d1=08;
+var m2=11;
+var d2=10;
+var y2=2015;
+     	
+var url='/me?fields=feed.since(1449532800).until(1449705600)';
      	for(i=0; i<4 ; i++){
      		console.log(i);
    var date = new Date(Date.UTC(y1, m1, d1));
@@ -40,7 +33,7 @@ date1=date1.toLocaleDateString();
          FB.api(ur,function(response2){
          	//console.log(response2.feed.data[2]);
         	for(j=0 ; j<response2.feed.data.length ; j++){
-        		console.log(response2.feed.data.length);
+        	//	console.log(response2.feed.data.length);
           	//	console.log(response2.feed.data[j]);
           		//console.log(response2.feed.data[j].story);
           		if(response2.feed.data[j].story){
@@ -54,8 +47,8 @@ date1=date1.toLocaleDateString();
 					x=x+1;
 					arr[count]=x;
 					count=count+1;
-				    
-				//	console.log("yes "+x);
+				    //document.getElementById("demo").innerHTML = x;
+					console.log("yes "+x);
 				}
 			
                 	}
@@ -68,16 +61,12 @@ date1=date1.toLocaleDateString();
           		}
         	}
         	console.log(arr);
-        	
-        	arr1=arr;
         	some(arr);
-        	//console.log('arr1 is '+arr1);
          });
 	y1=y1-1;
      	}
-      // console.log('arr1 is '+arr1);  
+         
      });
-     //console.log('arr is '+arr);
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       //document.getElementById('status').innerHTML = 'Please log into this app.';
@@ -91,11 +80,9 @@ date1=date1.toLocaleDateString();
         
     }
   }
-  
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
-  console.log('arr1 is now '+arr1);
   function checkLoginState() {
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
