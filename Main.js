@@ -17,13 +17,13 @@ function statusChangeCallback(response) {
 	   	var e=new Date();
 	   	 var c=b1.getDate();
 	     b1.setDate(c + 2);
-var y1=2015;
+//var y1=2015;
 //var m1=11;
 //var d1=08;
 //var m2=11;
 //var d2=10;
 var y2=2015;
-//var y1=e.getFullYear();
+var y1=e.getFullYear();
 	var m1=b.getMonth();
 	var d1=b.getDate();
 	var m2=b1.getMonth();
