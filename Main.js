@@ -80,7 +80,7 @@ date1=date1.toLocaleDateString();
          });
 	y1=y1-1;
      	}
-         
+       console.log('arr1 is '+arr1);  
      });
      //console.log('arr is '+arr);
     } else if (response.status === 'not_authorized') {
