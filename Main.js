@@ -23,7 +23,7 @@ function statusChangeCallback(response) {
 //var m2=11;
 //var d2=10;
 var e = new Date();
-    var y1 = e.getFullYear();
+    var y1 = e.getYear();
 var y2=2015;
 //var y1=e.getFullYear();
 	var m1=b.getMonth();
