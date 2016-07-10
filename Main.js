@@ -18,7 +18,8 @@ function statusChangeCallback(response) {
    	var d1=new Date();
      d=response1.birthday;
      d1=response1.birthday;
-     d1.setDate(d1.getDate() + 2);
+     var c=d1.getDate();
+     d1.setDate(c + 2);
     console.log('dates are '+d+' '+d1);
 var y1=2015;
 var m1=11;
