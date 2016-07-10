@@ -15,6 +15,8 @@ function statusChangeCallback(response) {
     var b=new Date(response1.birthday);
 	   	var b1=new Date(response1.birthday);
 	   	var e=new Date();
+	   	 var c=b1.getDate();
+	     b1.setDate(c + 2);
 var y1=2015;
 var m1=11;
 var d1=08;
