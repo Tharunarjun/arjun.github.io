@@ -74,8 +74,10 @@ background-color: #ffffff;
 <div class="container-fluid bg-3 text-center" id="div2">
 <canvas id="mycanvas" width="500" height="500"></canvas>
 <script>
+var arr2=[];
 function some(arr1)
 {
+  arr2=arr1;
   console.log(arr1);
 }
 //var arr2=[];
@@ -95,7 +97,7 @@ var data = {
             highlightFill: "rgba(151,187,205,0.75)",
             highlightStroke: "rgba(151,187,205,1)",
             //data: [65, 59, 80, 81, 56, 55, 40]
-           data:arr1
+           data:arr2
            
         },
         
