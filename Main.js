@@ -34,6 +34,8 @@ var y2=2015;
 	var d2=b1.getDate();
 	//var y2=e.getFullYear();
      	var k=y1;
+     	var i;
+     	var j;
 //var url='/me?fields=feed.since(1449532800).until(1449705600)';
  for(k=y1; k>2011 ; k--){
      		console.log(i);
@@ -41,12 +43,12 @@ var y2=2015;
 	date=date.toLocaleDateString();
 	var date1 = new Date(Date.UTC(y1, m2, d2));
 	date1=date1.toLocaleDateString();
-	console.log(y1);
+	console.log(k);
      //console.log(date);
      //console.log(date1);
      var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
          FB.api(ur,function(response2){
-         	console.log(y1);
+         	console.log(k);
          	//console.log(response2.feed.data[2]);
         	for(j=0 ; j<response2.feed.data.length ; j++){
         		//console.log(response2.feed.data.length);
@@ -80,7 +82,7 @@ var y2=2015;
         	console.log(arr);
         	some(arr);
          });
-	y1=y1-1;
+	//y1=y1-1;
      	}
          
      });
