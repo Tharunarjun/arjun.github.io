@@ -53,7 +53,8 @@ date1=date1.toLocaleDateString();
           		if(response2.feed.data[j].story){
           		var str = response2.feed.data[j].story;
     			var res = str.split(" ");
-			for(i=0;i<res.length;i++)
+    			var v=res.length;
+			for(i=0;i<v;i++)
 			{
 				if(isNaN(res[i])==false)
 				{
@@ -67,12 +68,12 @@ date1=date1.toLocaleDateString();
 			
                 	}
           		}
-          		else{
+          	/*	else{
           			x++;
           			arr[count]=x;
 					count=count+1;
           			console.log(x);
-          		}
+          		}*/
         	}
         	console.log(arr);
         	some(arr);
