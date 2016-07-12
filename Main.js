@@ -33,9 +33,9 @@ var y2=2015;
 	var m2=b1.getMonth();
 	var d2=b1.getDate();
 	//var y2=e.getFullYear();
-     	
+     	var k=y1;
 //var url='/me?fields=feed.since(1449532800).until(1449705600)';
- for(i=0; i<4 ; i++){
+ for(k=y1; k>2011 ; k--){
      		console.log(i);
 	  var date = new Date(Date.UTC(y1, m1, d1));
 	date=date.toLocaleDateString();
