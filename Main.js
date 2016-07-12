@@ -46,6 +46,7 @@ var y2=2015;
      //console.log(date1);
      var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
          FB.api(ur,function(response2){
+         	console.log(y1);
          	//console.log(response2.feed.data[2]);
         	for(j=0 ; j<response2.feed.data.length ; j++){
         		//console.log(response2.feed.data.length);
