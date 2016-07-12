@@ -35,21 +35,22 @@ var y2=2015;
 	//var y2=e.getFullYear();
      	
 //var url='/me?fields=feed.since(1449532800).until(1449705600)';
-     	for(i=0; i<4 ; i++){
+ for(i=0; i<4 ; i++){
      		console.log(i);
-   var date = new Date(Date.UTC(y1, m1, d1));
-date=date.toLocaleDateString();
-var date1 = new Date(Date.UTC(y1, m2, d2));
-date1=date1.toLocaleDateString();
+	  var date = new Date(Date.UTC(y1, m1, d1));
+	date=date.toLocaleDateString();
+	var date1 = new Date(Date.UTC(y1, m2, d2));
+	date1=date1.toLocaleDateString();
+	console.log(y1);
      //console.log(date);
      //console.log(date1);
      var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
          FB.api(ur,function(response2){
          	//console.log(response2.feed.data[2]);
         	for(j=0 ; j<response2.feed.data.length ; j++){
-        	//	console.log(response2.feed.data.length);
+        		//console.log(response2.feed.data.length);
           	//	console.log(response2.feed.data[j]);
-          		//console.log(response2.feed.data[j].story);
+          		console.log(response2.feed.data[j].story);
           		if(response2.feed.data[j].story){
           		var str = response2.feed.data[j].story;
     			var res = str.split(" ");
