@@ -9,7 +9,9 @@ function statusChangeCallback(response) {
       // Logged into your app and Facebook.
       testAPI();
       var arr= [];
+      var arr1=[];
       var count=0;
+      var count1=0;
       FB.api('/me?fields=birthday', function(response1) {
    	console.log(response1.birthday);
     var b=new Date(response1.birthday);
@@ -38,12 +40,12 @@ var y2=2015;
      	var j=0;
 //var url='/me?fields=feed.since(1449532800).until(1449705600)';
  for(k=y1; k>2011 ; k--){
-     		console.log(k);
+     	//	console.log(k);
 	  var date = new Date(Date.UTC(k, m1, d1));
 	date=date.toLocaleDateString();
 	var date1 = new Date(Date.UTC(k, m2, d2));
 	date1=date1.toLocaleDateString();
-	console.log(k);
+	//console.log(k);
      //console.log(date);
      //console.log(date1);
      var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
@@ -53,9 +55,13 @@ var y2=2015;
         	for(j=0 ; j<response2.feed.data.length ; j++){
         		//console.log(response2.feed.data.length);
           	//	console.log(response2.feed.data[j]);
-          		console.log(response2.feed.data[j].story);
+          		//console.log(response2.feed.data[j].story);
           		if(response2.feed.data[j].story){
           		var str = response2.feed.data[j].story;
+          		var str1=response2.feed.data[j].created_time;
+          		var res1=str1.split("-");
+          		arr1[count1]=res1[0];
+          		count1++;
     			var res = str.split(" ");
     			var v=res.length;
 			for(i=0;i<v;i++)
@@ -80,7 +86,8 @@ var y2=2015;
           		}*/
         	}
         	console.log(arr);
-        	some(arr);
+        	console.log(arr1);
+        	some(arr,arr1);
          });
 	//y1=y1-1;
      	}
