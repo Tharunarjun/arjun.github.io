@@ -55,13 +55,14 @@ var y2=2015;
         	for(j=0 ; j<response2.feed.data.length ; j++){
         		//console.log(response2.feed.data.length);
           	//	console.log(response2.feed.data[j]);
-          		//console.log(response2.feed.data[j].story);
+          		console.log(response2.feed.data[j].story);
           		if(response2.feed.data[j].story){
           		var str = response2.feed.data[j].story;
           		var str1=response2.feed.data[j].created_time;
           		var res1=str1.split("-");
           		arr1[count1]=res1[0];
           		count1++;
+          		console.log('yes'+response2.feed.data[j].story);
     			var res = str.split(" ");
     			var v=res.length;
 			for(i=0;i<v;i++)
