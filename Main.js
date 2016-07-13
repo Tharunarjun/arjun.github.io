@@ -39,7 +39,7 @@ var y2=2015;
      	var i=0;
      	var j=0;
 //var url='/me?fields=feed.since(1449532800).until(1449705600)';
- for(k=y1; k>2011 ; k--){
+ for(k=y1; k>2012 ; k--){
      	//	console.log(k);
 	  var date = new Date(Date.UTC(k, m1, d1));
 	date=date.toLocaleDateString();
