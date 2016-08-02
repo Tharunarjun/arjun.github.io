@@ -109,7 +109,8 @@ var y2=2015;
      	
          
      
-    } else if (response.status === 'not_authorized') {
+    }
+    else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       //document.getElementById('status').innerHTML = 'Please log into this app.';
       console.log("Please log into this app.");
@@ -122,6 +123,8 @@ var y2=2015;
         
     }
   }
+    }
+}
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
@@ -173,5 +176,5 @@ var y2=2015;
        
     });
   }
-    }
-}
+    
+
