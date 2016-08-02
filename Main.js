@@ -132,7 +132,7 @@ var y2=2015;
   
     
 }
-}
+
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
@@ -184,5 +184,5 @@ var y2=2015;
        
     });
   }
-    
+}    
 
