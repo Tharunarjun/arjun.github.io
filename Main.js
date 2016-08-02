@@ -42,7 +42,7 @@ var y2=2015;
 //var url='/me?fields=feed.since(1449532800).until(1449705600)';
  for(k=y1; k>2011 ; k--){
      	//	console.log(k);
-     	setTimeout(function () {
+     
 	  var date = new Date(Date.UTC(k, m1, d1));
 	date=date.toLocaleDateString();
 	var date1 = new Date(Date.UTC(k, m2, d2));
@@ -50,7 +50,10 @@ var y2=2015;
 	//console.log(k);
      //console.log(date);
      //console.log(date1);
-     var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
+     setTimeout(function () {
+     		
+	 var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
+       
          FB.api(ur,function(response2){
          	console.log(k);
          	//console.log(response2.feed.data[2]);
@@ -101,10 +104,11 @@ var y2=2015;
         	console.log(arr1);
         	some(arr,arr1);
          });
-	//y1=y1-1;
-     	}
-         
      }, 3000));
+	//y1=y1-1;
+     	
+         
+     
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       //document.getElementById('status').innerHTML = 'Please log into this app.';
