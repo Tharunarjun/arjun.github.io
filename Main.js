@@ -78,10 +78,15 @@ var y2=2015;
 					console.log("yes "+x);
 					f=1;
 				}
+				else if(f==0)
+                	{
+                		arr[count]=2;
+                		count++;
+                	}
 				
 			
                 	}
-                	if(f==0)
+                /*	if(f==0)
                 	{
                 		arr[count]=2;
                 		count++;
