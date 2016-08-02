@@ -104,7 +104,7 @@ var y2=2015;
         	console.log(arr1);
         	some(arr,arr1);
          });
-     }, 3000);
+     }, 3000)
 	//y1=y1-1;
      	
          
