@@ -1,3 +1,6 @@
+var myVar =setTimeout(myTime,1000);
+function myTime()
+{
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
@@ -50,7 +53,7 @@ var y2=2015;
 	//console.log(k);
      //console.log(date);
      //console.log(date1);
-     setTimeout(function () {
+     //setTimeout(function () {
      		
 	 var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
        
@@ -104,7 +107,9 @@ var y2=2015;
         	console.log(arr1);
         	some(arr,arr1);
          });
-     }, 3000)
+     
+     	
+     //}, 3000)
 	//y1=y1-1;
      	
          
@@ -124,6 +129,7 @@ var y2=2015;
     }
   }
     }
+}
 }
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
