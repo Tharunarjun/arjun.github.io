@@ -1,5 +1,5 @@
  
-var myVar =setTimeout(myTime,1000);
+
 
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
