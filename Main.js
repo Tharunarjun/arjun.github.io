@@ -1,6 +1,5 @@
 var myVar =setTimeout(myTime,1000);
-function myTime()
-{
+
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
@@ -45,7 +44,8 @@ var y2=2015;
 //var url='/me?fields=feed.since(1449532800).until(1449705600)';
  for(k=y1; k>2011 ; k--){
      	//	console.log(k);
-     
+     function myTime()
+{
 	  var date = new Date(Date.UTC(k, m1, d1));
 	date=date.toLocaleDateString();
 	var date1 = new Date(Date.UTC(k, m2, d2));
@@ -116,6 +116,7 @@ var y2=2015;
      
     }
       });
+      }
     }
     else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
@@ -184,5 +185,5 @@ var y2=2015;
        
     });
   }
-}    
+   
 
