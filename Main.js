@@ -87,10 +87,10 @@ var y2=2015;
 					console.log("yes "+x);
 					f=1;
 				}
-			
+			}
 				
 			
-                	}
+                	
                 	if(f==0)
                 	{
                 		arr[count]=2;
@@ -123,7 +123,7 @@ var y2=2015;
  }, 5 * k)           //123,124
  })(k);
  }
-      }
+      });
     }
     
     else if (response.status === 'not_authorized') {
