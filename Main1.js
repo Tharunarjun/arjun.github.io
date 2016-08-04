@@ -44,9 +44,9 @@ var y2=2015;
 //var url='/me?fields=feed.since(1449532800).until(1449705600)';
      	for(k=y1; k>2011 ; k--){
      		//console.log(i);
-   var date = new Date(Date.UTC(y1, m1, d1));
+   var date = new Date(Date.UTC(k, m1, d1));
 date=date.toLocaleDateString();
-var date1 = new Date(Date.UTC(y1, m2, d2));
+var date1 = new Date(Date.UTC(k, m2, d2));
 date1=date1.toLocaleDateString();
      //console.log(date);
      //console.log(date1);
