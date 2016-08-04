@@ -123,6 +123,8 @@ var y2=2015;
  }, 5 * k)           //123,124
  })(k);
  }
+      }
+    }
     
     else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
@@ -138,7 +140,7 @@ var y2=2015;
     }
   
     
-}
+
 
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
