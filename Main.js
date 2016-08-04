@@ -45,7 +45,8 @@ var y2=2015;
 //var url='/me?fields=feed.since(1449532800).until(1449705600)';
  for(k=y1; k>2011 ; k--){
      	//	console.log(k);
-
+(function(k){                                      //48,49
+    setTimeout(function(){
 
 	  var date = new Date(Date.UTC(k, m1, d1));
 	date=date.toLocaleDateString();
@@ -118,7 +119,10 @@ var y2=2015;
     
  }
       });
-      }
+      
+ }, 5 * k)           //123,124
+ })(k);
+ }
     
     else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
