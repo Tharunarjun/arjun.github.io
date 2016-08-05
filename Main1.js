@@ -94,6 +94,7 @@ date1=date1.toLocaleDateString();
         	some(arr,arr1)
          });
 	//y1=y1-1;
+	f=0;
      	}
          
      });
