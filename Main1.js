@@ -39,7 +39,7 @@ var y2=2015;
      	var k=y1;
      	var i=0;
      	var j=0;
-     	var f=0;
+     	
      	
 //var url='/me?fields=feed.since(1449532800).until(1449705600)';
      	for(k=y1; k>2011 ; k--){
@@ -57,6 +57,7 @@ date1=date1.toLocaleDateString();
         	//	console.log(response2.feed.data.length);
           	//	console.log(response2.feed.data[j]);
           		//console.log(response2.feed.data[j].story);
+          		var f=0;
           		if(response2.feed.data[j].story){
           		var str = response2.feed.data[j].story;
           		var str1=response2.feed.data[j].created_time;
@@ -78,6 +79,9 @@ date1=date1.toLocaleDateString();
 					console.log("yes "+x);
 					f=1;
 				}
+				
+				
+				
 			
                 	}
                 	console.log('f and k are  '+f+' '+k);
@@ -94,7 +98,7 @@ date1=date1.toLocaleDateString();
         	some(arr,arr1)
          });
 	//y1=y1-1;
-	f=0;
+//	f=0;
      	}
          
      });
