@@ -1,6 +1,6 @@
 function statusChangeCallback(response) {
-    console.log('statusChangeCallback');
-    console.log(response);
+    //console.log('statusChangeCallback');
+    //console.log(response);
     // The response object is returned with a status field that lets the
     // app know the current login status of the person.
     // Full docs on the response object can be found in the documentation
@@ -66,7 +66,7 @@ date1=date1.toLocaleDateString();
           		var res1=str1.split("-");
           		arr1[count1]=res1[0];
           		count1++;
-          		console.log('yes'+response2.feed.data[j].story);
+          		//console.log('yes'+response2.feed.data[j].story);
     			var res = str.split(" ");
     			var v=res.length;
 			for(i=0;i<v;i++)
@@ -78,7 +78,7 @@ date1=date1.toLocaleDateString();
 					arr[count]=x;
 					count=count+1;
 				    //document.getElementById("demo").innerHTML = x;
-					console.log("yes "+x);
+				//	console.log("yes "+x);
 					f=1;
 				}
 				
@@ -86,12 +86,12 @@ date1=date1.toLocaleDateString();
 				
 			
                 	}
-                	console.log('f and k are  '+f+' '+k);
+                //	console.log('f and k are  '+f+' '+k);
                 	if(f==0)
                 	{
                 		arr[count]=2;
                 		count++;
-                		console.log('Sir');
+                	//	console.log('Sir');
                 	}
           		}
           		
