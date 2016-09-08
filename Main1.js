@@ -48,7 +48,7 @@ var y2=2015;
 
      	for(k=y1; k>2011 ; k--){
      		//console.log(i);
-   var date = new Date(Date.UTC(k
+   var date = new Date(Dmte.UTC(k,m1,d1));
    console.log('yes');
 date=date.toLocaleDateString();
 var date1 = new Date(Date.UTC(k, m2, d2));
