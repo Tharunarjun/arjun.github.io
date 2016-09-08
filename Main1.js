@@ -28,7 +28,8 @@ var b=new Date(response1.birthday);
 var e = new Date();
    
     var da=e.toLocaleDateString();
-     var p = e.getFullYear();
+ //    var p = e.getFullYear();
+var p=2016;
     var y1=p;
     console.log(y1);
 var y2=2015;
