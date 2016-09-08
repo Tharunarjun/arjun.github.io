@@ -28,8 +28,8 @@ var b=new Date(response1.birthday);
 var e = new Date();
    
     var da=e.toLocaleDateString();
- //    var p = e.getFullYear();
-var p=2016;
+    var p = e.getFullYear();
+//var p=2016;
     var y1=p;
     console.log(y1);
 var y2=2015;
@@ -44,7 +44,8 @@ var y2=2015;
      	var j=0;
      	
      	
-//var url='/me?fields=feed.since(1449532800).until(1449705600)';
+//var url='/me?fields=feed.since(1449532800)l(1449705600)'g('yes')
+console.log('yes');
      	for(k=y1; k>2011 ; k--){
      		//console.log(i);
    var date = new Date(Date.UTC(k, m1, d1));
