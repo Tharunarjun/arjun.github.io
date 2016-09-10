@@ -58,8 +58,7 @@ date1=date1.toLocaleDateString();
      var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
          FB.api(ur,function(response2){
          //	console.log(response2.feed.data[2]);
-         console.log(response2.feed[length]);
-         console.log(response2.feed.data[length]);
+         console.log(response2.feed.data[length].toString());
         	for(j=0 ; j<response2.feed.data.length ; j++){
         		//console.log(response2.feed.data.length);
           		//console.log(response2.feed.data[j]);
