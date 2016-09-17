@@ -110,7 +110,7 @@ date1=date1.toLocaleDateString();
 				
 			
                 	}
-          		}
+          		
                 //	console.log('f and k are  '+f+' '+k);
                 	if(f==0&&x==true)
                 	{
@@ -122,6 +122,7 @@ date1=date1.toLocaleDateString();
 						count1++;
                 	//	console.log('Sir');
                 	}
+          		}
           		}
           		
         	}
