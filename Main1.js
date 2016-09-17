@@ -73,10 +73,12 @@ date1=date1.toLocaleDateString();
           		//if(response2.feed.data[j].story.includes("wrote on your Timeline.")){
           		if(response2.feed.data[j].story){
           		var str = response2.feed.data[j].story;
+          		console .log("Yo "+typeof str);
           		var str1=response2.feed.data[j].created_time;
           		console.log(str);
           		var res1=str1.split("-");
           		arr1[count1]=res1[0];
+          		var yr=re1[0];
           		count1++;
           		//console.log('yes'+response2.feed.data[j].story);
     			var res = str.split(" ");
