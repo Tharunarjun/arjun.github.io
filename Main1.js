@@ -125,7 +125,7 @@ date1=date1.toLocaleDateString();
                 		//	x=false;
                 			arr1[count1]=res1[0];
 						count1++;
-                		console.log('Sir');
+                		//console.log('Sir');
                 	}
           		 }
           		//
