@@ -1,6 +1,5 @@
  
 
-
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
