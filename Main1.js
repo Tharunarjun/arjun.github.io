@@ -69,16 +69,17 @@ date1=date1.toLocaleDateString();
           		var f=0;
           		var stt=response2.feed.data[j].story;
           		var sts="wrote on your Timeline.";
+          		var imp=stt.indexOf("wrote on your Timeline.");
           	//	if(stt.includes(sts)){
           		//if(response2.feed.data[j].story.includes("wrote on your Timeline.")){
-          		if(response2.feed.data[j].story){
+          		if(imp>-1){
           		var str = response2.feed.data[j].story;
           		console .log("Yo "+typeof str);
           		var str1=response2.feed.data[j].created_time;
           		console.log(str);
           		var res1=str1.split("-");
           		arr1[count1]=res1[0];
-          		var yr=re1[0];
+          	//	var yr=re1[0];
           		count1++;
           		//console.log('yes'+response2.feed.data[j].story);
     			var res = str.split(" ");
