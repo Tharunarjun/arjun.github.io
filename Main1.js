@@ -84,8 +84,9 @@ date1=date1.toLocaleDateString();
           	//	count1++;
           		//console.log('yes'+response2.feed.data[j].story);;
           		var b=str.includes("wrote");
-          		if(b)
-          		{
+          		//if(b)
+          		//{
+          			
     			var res = str.split(" ");
     			var v=res.length;
 			for(i=0;i<v;i++)
@@ -122,8 +123,8 @@ date1=date1.toLocaleDateString();
 						count1++;
                 	//	console.log('Sir');
                 	}
-          		}
-          		}
+          		 }
+          		//}
           		
         	}
         	console.log(arr);
