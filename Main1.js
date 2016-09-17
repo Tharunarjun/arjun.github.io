@@ -162,6 +162,9 @@ date1=date1.toLocaleDateString();
       statusChangeCallback(response);
     });
   }
+   function myFunction() {
+    alert("You are logged in!!!");
+}
   window.fbAsyncInit = function() {
   FB.init({
     appId      : '974830909219954',
