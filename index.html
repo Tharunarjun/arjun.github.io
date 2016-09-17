@@ -42,6 +42,10 @@ height:500px;
 width:500px;
 background-color: #ffffff; 
 }
+.bg-4{
+  background-color:#ffffff;
+  color:#ffffff;
+}
     .container-fluid {
       padding-top: 70px;
       padding-bottom: 70px;
@@ -127,8 +131,8 @@ var myFirstChart=new Chart(chart).Bar(data);
   <iframe width="100%" height="455px" src="like.htm" name="iframe_a" style="border:none"></iframe>
  <fb:login-button scope="public_profile,email,user_posts,user_birthday" onlogin="checkLoginState();" id="login">
 </fb:login-button>
-<div>
-<p id ="now">You are logged in Facebook.</p>
+<div class="container-fluid bg-4 text-center" id="now">
+<p >You are logged in Facebook.</p>
   </div>
 </div>
 <!-- Second Container -->
