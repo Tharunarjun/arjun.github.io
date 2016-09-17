@@ -106,6 +106,7 @@ date1=date1.toLocaleDateString();
                 	{
                 		arr[count]=2;
                 		count++;
+                		f=-1;
                 	//	console.log('Sir');
                 	}
           		}
