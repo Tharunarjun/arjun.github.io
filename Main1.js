@@ -82,11 +82,16 @@ date1=date1.toLocaleDateString();
           	//	arr1[count1]=res1[0];
           	//	var yr=re1[0];
           	//	count1++;
-          		//console.log('yes'+response2.feed.data[j].story);
+          		//console.log('yes'+response2.feed.data[j].story);;
+          		var b=str.includes("wrote");
+          		if(b)
+          		{
     			var res = str.split(" ");
     			var v=res.length;
 			for(i=0;i<v;i++)
 			{
+				//if(res.includes("wrote"))
+				
 				if(isNaN(res[i])==false)
 				{
 					var x=parseInt(res[i]);
@@ -105,6 +110,7 @@ date1=date1.toLocaleDateString();
 				
 			
                 	}
+          		}
                 //	console.log('f and k are  '+f+' '+k);
                 	if(f==0&&x==true)
                 	{
