@@ -114,7 +114,8 @@ date1=date1.toLocaleDateString();
                 	}
           		
                 //	console.log('f and k are  '+f+' '+k);
-                	if(f==0&&x==true)
+                //	if(f==0&&x==true)
+                else
                 	{
                 		arr[count]=2;
                 		count++;
