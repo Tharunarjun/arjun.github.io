@@ -12,7 +12,7 @@ function statusChangeCallback(response) {
       var arr1=[];
       var count=0;
       var count1=0;
-      var x=false;
+     
       FB.api('/me?fields=birthday', function(response1) {
    	console.log(response1.birthday);
     
@@ -87,7 +87,7 @@ date1=date1.toLocaleDateString();
           		if(b)
           		{
           			
-          			
+          		 var x=false;	
     			var res = str.split(" ");
     			var v=res.length;
 			for(i=0;i<v;i++)
@@ -108,17 +108,7 @@ date1=date1.toLocaleDateString();
 				x=true;
 				}
 				
-				if(x==false)
-        		 
-	                	{
-	                		arr[count]=2;
-	                		count++;
-	                		f=-1;
-	                		//	x=false;
-	                			arr1[count1]=res1[0];
-							count1++;
-	                		console.log('Sir');
-	                	}
+				
 				
 				
 				
@@ -126,7 +116,7 @@ date1=date1.toLocaleDateString();
                 	}
           		
                 //	console.log('f and k are  '+f+' '+k);
-                /*	if(x==false)
+                	if(x==false)
         		 
                 	{
                 		arr[count]=2;
@@ -136,7 +126,7 @@ date1=date1.toLocaleDateString();
                 			arr1[count1]=res1[0];
 						count1++;
                 		console.log('Sir');
-                	}*/
+                	}
           		 }
           		//
           			
