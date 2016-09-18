@@ -164,7 +164,7 @@ date1=date1.toLocaleDateString();
   }
    function myFunction() {
     alert("You are logged in!!!");
-     alert("Press the Click Here button to see your Birthday posts");
+     alert("Press the "Click Here!" button to see your Birthday posts");
 }
   window.fbAsyncInit = function() {
   FB.init({
