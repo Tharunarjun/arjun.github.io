@@ -177,13 +177,13 @@ date1=date1.toLocaleDateString();
     alert("You are logged in!!!");
      alert("Press the Click Here! button to see your Birthday posts");
 }
-function swap(int x, int y)
+/*function swap(int x, int y)
 {
   int temp=0;
   temp=x;
   x=y;
   y=temp;
-}
+}*/
   window.fbAsyncInit = function() {
   FB.init({
     appId      : '974830909219954',
