@@ -134,7 +134,7 @@ date1=date1.toLocaleDateString();
           		
         	}
         	console.log(arr);
-    for(int i=0;i<l;i++)
+  /*  for(int i=0;i<l;i++)
   {
     for(int j=i;j<l;j++)
     {
@@ -144,7 +144,7 @@ date1=date1.toLocaleDateString();
         swap(arr[j],arr[j+1]);
       }
     }
-  }
+  }*/
         	some(arr,arr1)
          });
 	//y1=y1-1;
