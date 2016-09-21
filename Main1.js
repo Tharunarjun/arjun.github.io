@@ -55,7 +55,7 @@ var y2=2015;
 date=date.toLocaleDateString();
 var date1 = new Date(Date.UTC(k, m2, d2));
 date1=date1.toLocaleDateString();
-     //console.log(date);
+     console.log(date);
      //console.log(date1);
      var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
          FB.api(ur,function(response2){
