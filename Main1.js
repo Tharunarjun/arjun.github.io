@@ -53,14 +53,16 @@ var y2=2015;
    var date = new Date(Date.UTC(k,m1,d1));
    var c=new Date(Date.UTC(k,m1,d1)).getTime() / 1000;
    console.log(c);
+   var c1=new Date(Date.UTC(k,m2,d2)).getTime() / 1000;
+   console.log(c1);
    console.log('yes');
 date=date.toLocaleDateString();
-var date1 = new Date(Date.UTC(k, m2, d2));
+var date1 = new Date(Date.UTC(k, m2, d2));1
 date1=date1.toLocaleDateString();
      console.log(date);
      //console.log(date1);
-     var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
-     
+    // var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
+     var ur='/me?fields=feed.since( '+ c + ').until(' + c1 + ')';
          FB.api(ur,function(response2){
          //console.log(response2.feed);
          //console.log(response2.feed.data);
