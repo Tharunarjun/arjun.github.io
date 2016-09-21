@@ -26,12 +26,12 @@ var b=new Date(response1.birthday);
 //var d1=08;
 //var m2=11;
 //var d2=10;
-var e = new Date();
+/*var e = new Date();
    
     var da=e.toLocaleDateString();
-    var p = e.getFullYear();
+    var p = e.getFullYear();*/
 //var p=2016;
-    var y1=p;
+   // var y1=p;
    // console.log(y1);
 var y2=2015;
 //var y1=e.getFullYear();
@@ -48,7 +48,7 @@ var y2=2015;
      	
 //var url='/me?fields=feed.since(1449532800)l(1449705600)'g('yes')
 
-     	for(k=y1; k>2012 ; k--){
+     	for(k=2016; k>2011 ; k--){
      		//console.log(i);
    var date = new Date(Date.UTC(k,m1,d1));
    var c=new Date(Date.UTC(k,m1,d1)).getTime() / 1000;
