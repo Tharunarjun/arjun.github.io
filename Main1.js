@@ -67,7 +67,7 @@ date1=date1.toLocaleDateString();
           		//console.log(response2.feed.data[j]);
           		//var ct="wrote on your Timeline.";
           	//	var ct=response2.
-          		//console.log(response2.feed.data[j].story);
+          		console.log(response2.feed.data[j].story);
           		var f=0;
           		var stt=response2.feed.data[j].story;
           		var sts="wrote on your Timeline.";
