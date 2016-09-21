@@ -41,14 +41,14 @@ var y2=2015;
 	var d2=b1.getDate();
 	//var y2=e.getFullYear();
      	//var k=y1;
-     	var k=2016;
+     //	var k=2016;
      	var i=0;
      	var j=0;
      	
      	
 //var url='/me?fields=feed.since(1449532800)l(1449705600)'g('yes')
 
-     	for(k=y1; k>2011 ; k--){
+     	for(k=2016; k>2011 ; k--){
      		//console.log(i);
    var date = new Date(Date.UTC(k,m1,d1));
    console.log('yes');
