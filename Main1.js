@@ -26,13 +26,13 @@ var b=new Date(response1.birthday);
 //var d1=08;
 //var m2=11;
 //var d2=10;
-var e = new Date();
+/*var e = new Date();
    
     var da=e.toLocaleDateString();
-    var p = e.getFullYear();
+    var p = e.getFullYear();*/
 //var p=2016;
-    var y1=p;
-    console.log(y1);
+   // var y1=p;
+   // console.log(y1);
 var y2=2015;
 //var y1=e.getFullYear();
 	var m1=b.getMonth();
@@ -40,7 +40,8 @@ var y2=2015;
 	var m2=b1.getMonth();
 	var d2=b1.getDate();
 	//var y2=e.getFullYear();
-     	var k=y1;
+     	//var k=y1;
+     	var k=2016;
      	var i=0;
      	var j=0;
      	
