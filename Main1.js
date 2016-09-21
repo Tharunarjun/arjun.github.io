@@ -62,6 +62,8 @@ date1=date1.toLocaleDateString();
          //console.log(response2.feed);
          //console.log(response2.feed.data);
          //console.log(typeof(response2.feed.data[length]));
+         if(response2.feed.data.length>0)
+         {
         	for(j=0 ; j<response2.feed.data.length ; j++){
         		//console.log(response2.feed.data.length);
           		//console.log(response2.feed.data[j]);
@@ -134,6 +136,7 @@ date1=date1.toLocaleDateString();
           		}
           		
         	}
+         }
         	console.log(arr);
   /*  for(int i=0;i<l;i++)
   {
