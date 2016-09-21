@@ -67,7 +67,7 @@ date1=date1.toLocaleDateString();
          //console.log(response2.feed);
          //console.log(response2.feed.data);
          //console.log(typeof(response2.feed.data[length]));
-         if(response2)
+         if(response2.feed)
          {
         	for(j=0 ; j<response2.feed.data.length ; j++){
         		console.log(response2.feed.data.length);
