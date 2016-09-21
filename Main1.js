@@ -48,7 +48,7 @@ var y2=2015;
      	
 //var url='/me?fields=feed.since(1449532800)l(1449705600)'g('yes')
 
-     	for(k=2016; k>2011 ; k--){
+     	for(k=2015; k>2011 ; k--){
      		//console.log(i);
    var date = new Date(Date.UTC(k,m1,d1));
    var c=new Date(Date.UTC(k,m1,d1)).getTime() / 1000;
