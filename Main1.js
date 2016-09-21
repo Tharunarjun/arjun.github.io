@@ -51,6 +51,8 @@ var y2=2015;
      	for(k=2012; k>2011 ; k--){
      		//console.log(i);
    var date = new Date(Date.UTC(k,m1,d1));
+   var c=new Date(Date.UTC(k,m1,d1)).getTime() / 1000;
+   console.log(c);
    console.log('yes');
 date=date.toLocaleDateString();
 var date1 = new Date(Date.UTC(k, m2, d2));
@@ -58,11 +60,12 @@ date1=date1.toLocaleDateString();
      console.log(date);
      //console.log(date1);
      var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
+     
          FB.api(ur,function(response2){
          //console.log(response2.feed);
          //console.log(response2.feed.data);
          //console.log(typeof(response2.feed.data[length]));
-         if(response2.feed.data.length>0)
+         if(response2.feed.data.length)
          {
         	for(j=0 ; j<response2.feed.data.length ; j++){
         		console.log(response2.feed.data.length);
