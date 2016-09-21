@@ -65,7 +65,7 @@ date1=date1.toLocaleDateString();
          if(response2.feed.data.length>0)
          {
         	for(j=0 ; j<response2.feed.data.length ; j++){
-        		//console.log(response2.feed.data.length);
+        		console.log(response2.feed.data.length);
           		//console.log(response2.feed.data[j]);
           		//var ct="wrote on your Timeline.";
           	//	var ct=response2.
