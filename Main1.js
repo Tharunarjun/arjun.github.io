@@ -50,15 +50,15 @@ var y2=2015;
 
      	for(k=y1; k>2004 ; k--){
      		//console.log(i);
-   var date = new Date(Date.UTC(k,m1,d1));
+   //var date = new Date(Date.UTC(k,m1,d1));
    var c=new Date(Date.UTC(k,m1,d1)).getTime() / 1000;
    console.log(c);
    var c1=new Date(Date.UTC(k,m2,d2)).getTime() / 1000;
    console.log(c1);
-   console.log('yes');
-date=date.toLocaleDateString();
-var date1 = new Date(Date.UTC(k, m2, d2));
-date1=date1.toLocaleDateString();
+   //console.log('yes');
+//date=date.toLocaleDateString();
+//var date1 = new Date(Date.UTC(k, m2, d2));
+//date1=date1.toLocaleDateString();
      console.log(date);
      //console.log(date1);
     // var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
@@ -70,14 +70,14 @@ date1=date1.toLocaleDateString();
          if(response2.feed)
          {
         	for(j=0 ; j<response2.feed.data.length ; j++){
-        		console.log(response2.feed.data.length);
+        		//console.log(response2.feed.data.length);
           		//console.log(response2.feed.data[j]);
           		//var ct="wrote on your Timeline.";
           	//	var ct=response2.
           		console.log(response2.feed.data[j].story);
           		var f=0;
-          		var stt=response2.feed.data[j].story;
-          		var sts="wrote on your Timeline.";
+          		//var stt=response2.feed.data[j].story;
+          		//var sts="wrote on your Timeline.";
           	//	var imp=stt.indexOf("wrote on your Timeline.");
           	//	if(stt.includes(sts)){
           		//if(response2.feed.data[j].story.includes("wrote on your Timeline.")){
@@ -85,7 +85,7 @@ date1=date1.toLocaleDateString();
           		var str = response2.feed.data[j].story;
           		//console .log("Yo "+typeof str);
           		var str1=response2.feed.data[j].created_time;
-          		console.log(str);
+          		//console.log(str);
           		var res1=str1.split("-");
           	//	arr1[count1]=res1[0];
           	//	var yr=re1[0];
