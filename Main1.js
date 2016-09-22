@@ -18,79 +18,46 @@ function statusChangeCallback(response) {
     
 var b=new Date(response1.birthday);
 	   	var b1=new Date(response1.birthday);
-	   	//var e=new Date();
+	   	
 	   	 var c=b1.getDate();
 	     b1.setDate(c + 2);
-//var y1=2015;
-//var m1=11;
-//var d1=08;
-//var m2=11;
-//var d2=10;
-var e = new Date();
-   
+    var e = new Date();
     var da=e.toLocaleDateString();
     var p = e.getFullYear();
-//var p=2016;
     var y1=p;
-   // console.log(y1);
-var y2=2015;
-//var y1=e.getFullYear();
+    var y2=2015;
+
 	var m1=b.getMonth();
 	var d1=b.getDate();
 	var m2=b1.getMonth();
 	var d2=b1.getDate();
-	//var y2=e.getFullYear();
-     	//var k=y1;
-     //	var k=2016;
+	
      	var i=0;
      	var j=0;
      	
-     	
-//var url='/me?fields=feed.since(1449532800)l(1449705600)'g('yes')
-
      	for(k=y1; k>2004 ; k--){
-     		//console.log(i);
-   //var date = new Date(Date.UTC(k,m1,d1));
+     	
    var c=new Date(Date.UTC(k,m1,d1)).getTime() / 1000;
    console.log(c);
    var c1=new Date(Date.UTC(k,m2,d2)).getTime() / 1000;
    console.log(c1);
-   //console.log('yes');
-//date=date.toLocaleDateString();
-//var date1 = new Date(Date.UTC(k, m2, d2));
-//date1=date1.toLocaleDateString();
-//     console.log(date);
-     //console.log(date1);
-    // var ur='/me?fields=feed.since( '+ date + ').until(' + date1 + ')';
+   
      var ur='/me?fields=feed.since( '+ c + ').until(' + c1 + ')';
          FB.api(ur,function(response2){
-         //console.log(response2.feed);
-         //console.log(response2.feed.data);
-         //console.log(typeof(response2.feed.data[length]));
+         
          if(response2.feed)
          {
         	for(j=0 ; j<response2.feed.data.length ; j++){
-        		//console.log(response2.feed.data.length);
-          		//console.log(response2.feed.data[j]);
-          		//var ct="wrote on your Timeline.";
-          	//	var ct=response2.
+        	
           		console.log(response2.feed.data[j].story);
           		var f=0;
-          		//var stt=response2.feed.data[j].story;
-          		//var sts="wrote on your Timeline.";
-          	//	var imp=stt.indexOf("wrote on your Timeline.");
-          	//	if(stt.includes(sts)){
-          		//if(response2.feed.data[j].story.includes("wrote on your Timeline.")){
+          	
           		if(response2.feed.data[j].story){
           		var str = response2.feed.data[j].story;
-          		//console .log("Yo "+typeof str);
+          		
           		var str1=response2.feed.data[j].created_time;
-          		//console.log(str);
           		var res1=str1.split("-");
-          	//	arr1[count1]=res1[0];
-          	//	var yr=re1[0];
-          	//	count1++;
-          		//console.log('yes'+response2.feed.data[j].story);;
+          
           		var b=str.includes("wrote");
           		if(b)
           		{
@@ -100,7 +67,7 @@ var y2=2015;
     			var v=res.length;
 			for(i=0;i<v;i++)
 			{
-				//if(res.includes("wrote"))
+			
 				
 				if(isNaN(res[i])==false)
 				{
@@ -110,8 +77,7 @@ var y2=2015;
 					count=count+1;
 					arr1[count1]=res1[0];
 						count1++;
-				    //document.getElementById("demo").innerHTML = x;
-				//	console.log("yes "+x);
+				  
 					f=1;
 				x=true;
 				}
@@ -123,41 +89,30 @@ var y2=2015;
 			
                 	}
           		
-                //	console.log('f and k are  '+f+' '+k);
+               
                 	if(x==false)
         		 
                 	{
                 		arr[count]=2;
                 		count++;
                 		f=-1;
-                		//	x=false;
+                		
                 			arr1[count1]=res1[0];
 						count1++;
-                		//console.log('Sir');
+                	
                 	}
           		 }
-          		//
+          	
           			
           		}
           		
         	}
          }
         	console.log(arr);
-  /*  for(int i=0;i<l;i++)
-  {
-    for(int j=i;j<l;j++)
-    {
-      if(arr1[j]>arr1[j+1])
-      {
-        swap(arr1[j],arr1[j+1]);
-        swap(arr[j],arr[j+1]);
-      }
-    }
-  }*/
+  
         	some(arr,arr1)
          });
-	//y1=y1-1;
-//	f=0;
+
      	}
          
      });
@@ -186,13 +141,7 @@ var y2=2015;
     alert("You are logged in!!!");
      alert("Press the Click Here! button to see your Birthday posts");
 }
-/*function swap(int x, int y)
-{
-  int temp=0;
-  temp=x;
-  x=y;
-  y=temp;
-}*/
+
   window.fbAsyncInit = function() {
   FB.init({
     appId      : '974830909219954',
