@@ -35,7 +35,7 @@ var b=new Date(response1.birthday);
      	var i=0;
      	var j=0;
      	
-     	for(k=2010; k>2009 ; k--){
+     	for(k=y1; k>2009 ; k--){
      	
    var c=new Date(Date.UTC(k,m1,d1)).getTime() / 1000;
    console.log(c);
