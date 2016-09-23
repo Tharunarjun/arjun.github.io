@@ -26,7 +26,7 @@ var b=new Date(response1.birthday);
     var p = e.getFullYear();
     var y1=p;
     var y2=2015;
-
+var count2=0;
 	var m1=b.getMonth();
 	var d1=b.getDate();
 	var m2=b1.getMonth();
@@ -52,8 +52,9 @@ var b=new Date(response1.birthday);
          	console.log("k is "+ k);
          	count1++;
          }*/
-     //    if(response2.feed)
-   //      {
+       if(response2.feed)
+         {
+         	
          	
          	console.log(response2.feed);
         	for(j=0 ; j<response2.feed.data.length ; j++){
@@ -118,7 +119,13 @@ var b=new Date(response1.birthday);
         	}
          
          	
-         //}
+         //
+         }
+         else{
+         	var arr2;
+         	arr2[count1]=k;
+         	count1++;
+         }
          
         	console.log(arr);
   
