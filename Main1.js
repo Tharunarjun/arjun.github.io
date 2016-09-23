@@ -108,7 +108,7 @@ var b=new Date(response1.birthday);
           		
         	}
          }
-         else{
+         else if(!response2.feed){
          	arr[count]=0;
          	count++;
          	arr1[count1]=k;
