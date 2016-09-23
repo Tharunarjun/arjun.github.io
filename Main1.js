@@ -35,7 +35,7 @@ var b=new Date(response1.birthday);
      	var i=0;
      	var j=0;
      	
-     	for(k=2011; k>2009 ; k--){
+     	for(k=y1; k>2009 ; k--){
      	
    var c=new Date(Date.UTC(k,m1,d1)).getTime() / 1000;
    console.log(c);
@@ -45,13 +45,13 @@ var b=new Date(response1.birthday);
      var ur='/me?fields=feed.since( '+ c + ').until(' + c1 + ')';
          FB.api(ur,function(response2){
          console.log("k is    "+k);
-         /* if(!response2.feed){
+          if(!response2.feed){
          	arr[count]=0;
          	count++;
          	arr1[count1]=k;
          	console.log("k is "+ k);
          	count1++;
-         }*/
+         }
          if(response2.feed)
          {
          	console.log(response2.feed);
