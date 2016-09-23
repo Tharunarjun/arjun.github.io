@@ -41,7 +41,7 @@ var b=new Date(response1.birthday);
    console.log(c);
    var c1=new Date(Date.UTC(k,m2,d2)).getTime() / 1000;
    console.log(c1);
-   
+   console.log("k is            "+k);
      var ur='/me?fields=feed.since( '+ c + ').until(' + c1 + ')';
          FB.api(ur,function(response2){
          console.log("k is    "+k);
