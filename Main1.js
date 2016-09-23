@@ -112,6 +112,7 @@ var b=new Date(response1.birthday);
          	arr[count]=0;
          	count++;
          	arr1[count1]=k;
+         	console.log("k is "+ k);
          	count1++;
          }
         	console.log(arr);
