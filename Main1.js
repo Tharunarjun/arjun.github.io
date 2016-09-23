@@ -35,7 +35,7 @@ var b=new Date(response1.birthday);
      	var i=0;
      	var j=0;
      	
-     	for(k=y1; k>2004 ; k--){
+     	for(k=y1; k>2009 ; k--){
      	
    var c=new Date(Date.UTC(k,m1,d1)).getTime() / 1000;
    console.log(c);
@@ -107,6 +107,12 @@ var b=new Date(response1.birthday);
           		}
           		
         	}
+         }
+         else{
+         	arr[count]=0;
+         	count++;
+         	arr1[count1]=k;
+         	count1++;
          }
         	console.log(arr);
   
