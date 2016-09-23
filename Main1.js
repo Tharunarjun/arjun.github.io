@@ -10,6 +10,7 @@ function statusChangeCallback(response) {
       testAPI();
       var arr= [];
       var arr1=[];
+      var arr2=[];
       var count=0;
       var count1=0;
      
@@ -122,7 +123,7 @@ var count2=0;
          //
          }
          else{
-         	var arr2;
+         	
          	arr2[count1]=k;
          	count1++;
          }
