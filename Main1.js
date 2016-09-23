@@ -52,8 +52,9 @@ var b=new Date(response1.birthday);
          	console.log("k is "+ k);
          	count1++;
          }*/
-         if(response2.feed)
-         {
+     //    if(response2.feed)
+   //      {
+         	
          	console.log(response2.feed);
         	for(j=0 ; j<response2.feed.data.length ; j++){
         	
@@ -115,7 +116,9 @@ var b=new Date(response1.birthday);
           		}
           		
         	}
-         }
+         
+         	
+         //}
          
         	console.log(arr);
   
