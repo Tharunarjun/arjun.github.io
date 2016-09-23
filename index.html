@@ -116,7 +116,7 @@ function some(arr1,arr3)
  console.log("sorted array is " +arr3);
  var l1=arr4.length;
  
-for(n=0;n<l1;n++)
+/*for(n=0;n<l1;n++)
 {
   for(m=0;m<l;m++)
   {
@@ -127,13 +127,37 @@ for(n=0;n<l1;n++)
   }
 }
 console.log("arr4 is "+arr4);
-/*for(n=0;n<l1-1;n++)
+for(n=0;n<l1-1;n++)
 {
   if(arr4[n]!=0)
   {
   
   }
 }*/
+
+for(n=0;n<l1-1;n++)
+{
+  var searchElement=arr4[n];
+  var minIndex = 0;
+    var maxIndex = arr3.length - 1;
+    var currentIndex;
+    var currentElement;
+ 
+    while (minIndex <= maxIndex) {
+        currentIndex = (minIndex + maxIndex) / 2 | 0;
+        currentElement = arr3[currentIndex];
+ 
+        if (currentElement < searchElement) {
+            minIndex = currentIndex + 1;
+        }
+        else if (currentElement > searchElement) {
+            maxIndex = currentIndex - 1;
+        }
+        else {
+            console.log("Element not present is "+arr4[n]);
+        }
+    }
+}
 var chart =document.getElementById("mycanvas").getContext("2d");
 var data = {
    
