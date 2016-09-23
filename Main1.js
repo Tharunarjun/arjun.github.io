@@ -122,12 +122,7 @@ var count2=0;
          	
          //
          }
-         else{
-         	
-         	arr2[count1]=k;
-         	count1++;
-         }
-         
+        
         	console.log(arr);
   
         	some(arr,arr1)
