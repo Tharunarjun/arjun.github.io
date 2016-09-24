@@ -124,9 +124,9 @@ var count2=0;
          }
         
         	console.log(arr);
-  
+  console.log("l is "+arr.length);
         	some(arr,arr1);
-		 console.log("l is "+arr.length);
+		 
          });
 
      	}
