@@ -130,7 +130,7 @@ var count2=0;
 		 if(arr.length==0)
 		 {
 			 count4++;
-			 console.log("count4 is "+count4);
+			 console.log("count4 and count3 are  "+count4+" "+count3);
 		 }
 		 if(count4==count3)
 		 {
