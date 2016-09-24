@@ -134,7 +134,7 @@ var count2=0;
 		 }
 		 if(count4==count3)
 		 {
-			 alert("No data");
+			 alert("No data of posts present for you account ");
 		 }
  // console.log("l is "+arr.length);
         	some(arr,arr1);
