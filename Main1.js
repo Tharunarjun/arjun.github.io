@@ -125,7 +125,8 @@ var count2=0;
         
         	console.log(arr);
   
-        	some(arr,arr1)
+        	some(arr,arr1);
+		 console.log("l is "+arr.length);
          });
 
      	}
