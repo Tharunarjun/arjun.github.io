@@ -34,12 +34,12 @@ var count2=0;
 	var m2=b1.getMonth();
 	var d2=b1.getDate();
 	//var count3=y1-2009;
-	      var count3=2011-2009;
+	      var count3=2011-2004;
 	      var count4=0;
      	var i=0;
      	var j=0;
      	
-     	for(k=2011; k>2009 ; k--){
+     	for(k=2011; k>2004 ; k--){
      	
    var c=new Date(Date.UTC(k,m1,d1)).getTime() / 1000;
    console.log(c);
@@ -134,7 +134,7 @@ var count2=0;
 		 }
 		 if(count4==count3)
 		 {
-			 console.log("No data");
+			 alert("No data");
 		 }
  // console.log("l is "+arr.length);
         	some(arr,arr1);
