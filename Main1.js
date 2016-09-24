@@ -11,6 +11,7 @@ function statusChangeCallback(response) {
       var arr= [];
       var arr1=[];
       var arr2=[];
+	    var arr3=[];
       var count=0;
       var count1=0;
      
@@ -32,7 +33,8 @@ var count2=0;
 	var d1=b.getDate();
 	var m2=b1.getMonth();
 	var d2=b1.getDate();
-	
+	var count3=y1-2009;
+	      var count4=0;
      	var i=0;
      	var j=0;
      	
@@ -124,7 +126,16 @@ var count2=0;
          }
         
         	console.log(arr);
-  console.log("l is "+arr.length);
+		 if(arr.length==0)
+		 {
+			 count4++;
+			 console.log("count4 is "+count4);
+		 }
+		 if(count4==count3)
+		 {
+			 console.log("No data");
+		 }
+ // console.log("l is "+arr.length);
         	some(arr,arr1);
 		 
          });
