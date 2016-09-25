@@ -33,13 +33,13 @@ var count2=0;
 	var d1=b.getDate();
 	var m2=b1.getMonth();
 	var d2=b1.getDate();
-	//var count3=y1-2009;
-	      var count3=2011-2004;
+	var count3=y1-2009;
+	//      var count3=2011-2004;
 	      var count4=0;
      	var i=0;
      	var j=0;
      	
-     	for(k=2011; k>2004 ; k--){
+     	for(k=y1; k>2004 ; k--){
      	
    var c=new Date(Date.UTC(k,m1,d1)).getTime() / 1000;
    console.log(c);
