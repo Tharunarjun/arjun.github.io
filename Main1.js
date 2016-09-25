@@ -131,12 +131,14 @@ var count2=0;
 		 {
 			 count4++;
 			 console.log("count4 and count3 are  "+count4+" "+count3);
+			 
 		 }
-		 if(count4==count3)
+		 /*if(count4==count3)
 		 {
 			 alert("No data of posts present for you account ");
-		 }
+		 }*/
  // console.log("l is "+arr.length);
+		 check(count4,count3);
         	some(arr,arr1);
 		 
          });
