@@ -138,6 +138,7 @@ var count2=0;
 			 alert("No data of posts present for you account ");
 		 }*/
  // console.log("l is "+arr.length);
+		 
 		 check(count4,count3);
         	some(arr,arr1);
 		 
