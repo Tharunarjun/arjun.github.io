@@ -66,6 +66,10 @@ background-color: #ffffff;
     $("#div2").hide();
     $("#button").on("click", function(){
       check();
+      if(count3==count4&&test==count3+1)
+    {
+      alert("No data of posts  present for your account");
+  }
       console.log(test);
         $("#div0, #div2").toggle();
     });
@@ -96,10 +100,7 @@ var arr2=[];
   {
     test++;
     console.log("test is "+test);
-    if(count3==count4&&test==count3+1)
-    {
-      alert("No data of posts  present for your account");
-  }
+    
   }
 function some(arr1,arr3)
 {
