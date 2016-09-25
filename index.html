@@ -65,7 +65,7 @@ background-color: #ffffff;
      // check();
     $("#div2").hide();
     $("#button").on("click", function(){
-      check(count4,count3);
+      check();
         $("#div0, #div2").toggle();
     });
 });
@@ -88,12 +88,15 @@ var arr2=[];
   y=temp;
 }*/
   function check(count4,count3){
+    checkonceagain(count4,count3);
+  }
+  function checkonceagain(count4,count3)
+  {
     if(count3==count4)
     {
       alert("No data of posts  present for your account");
   }
   }
-  
 function some(arr1,arr3)
 {
   arr2=arr1;
