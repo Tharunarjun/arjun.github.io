@@ -168,12 +168,12 @@ var count2=0;
    function myFunction() {
     alert("You are logged in!!!  and Press the Click Here! button to see your Birthday posts");
      //alert("Press the Click Here! button to see your Birthday posts");
-	    if(arr.length==0)
+	    /*if(arr.length==0)
 		 {
 			 count4++;
 			 console.log("count4 and count3 are  "+count4+" "+count3);
 		 }
-		/* if(count4==count3)
+		 if(count4==count3)
 		 {
 			 alert("No data of posts present for you account ");
 		 }*/
