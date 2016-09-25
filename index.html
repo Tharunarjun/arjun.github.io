@@ -87,12 +87,14 @@ var arr2=[];
   x=y;
   y=temp;
 }*/
+  var test=0;
   function check(count4,count3){
     checkonceagain(count4,count3);
   }
   function checkonceagain(count4,count3)
   {
-    if(count3==count4)
+    test++;
+    if(count3==count4&&test==1)
     {
       alert("No data of posts  present for your account");
   }
