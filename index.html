@@ -67,7 +67,7 @@ background-color: #ffffff;
     $("#button").on("click", function(){
       checkonceagain();
      
-      console.log(test);
+      //console.log(test);
         $("#div0, #div2").toggle();
     });
 });
@@ -97,6 +97,7 @@ var arr2=[];
   function checkonceagain(count4,count3)
   {
     test++; 
+    console.log("Yes");
      if(count3==count4&&test==count3+1)
     {
       alert("No data of posts  present for your account");
