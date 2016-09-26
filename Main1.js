@@ -157,6 +157,7 @@ var count2=0;
       // they are logged into this app or not.
       //document.getElementById('status').innerHTML = 'Please log into Facebook.';
       console.log("Please log into Facebook.");
+	    alert("Please log into Facebook.");
         
     }
   }
