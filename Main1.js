@@ -203,7 +203,7 @@ var count2=0;
   //    your app or not.
   //
   // These three cases are handled in the callback function.
-  FB.getLoginStatus(function(response) {
+  FB.getLoginStatus(function(response) { //Code for getting the access token
     statusChangeCallback(response);
   });
   };
